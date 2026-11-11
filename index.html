@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dilman Namdar | Linktree</title>
+    <meta name="description" content="Alle Projekte und Links von Dilman Namdar auf einer Seite.">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="profile">
+            <img
+                src="./images.jpg"
+                alt="Profilbild von Dilman Namdar"
+                class="avatar"
+            >
+
+            <h1>Dilman <span>Namdar</span></h1>
+            <h2><span class="code-icon">&lt;/&gt;</span> Softwareentwickler</h2>
+        </header>
+
+        <section class="intro">
+            <h3>Willkommen auf meiner persönlichen Seite!</h3>
+            <p>Schön, dass du hier bist!</p>
+        </section>
+
+        <nav class="links" aria-label="Meine Links">
+
+            <a href="https://github.com/NamlidN"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="link-card">
+
+                <span class="link-icon">⌘</span>
+
+                <span class="link-text">
+                    <strong>GitHub</strong>
+                    <small>Meine Projekte &amp; Code</small>
+                </span>
+
+                <span class="arrow">›</span>
+            </a>
+
+        </nav>
+
+        <section class="contact">
+
+            <button class="contact-toggle" id="contactToggle"
+                    type="button" aria-expanded="false"
+                    aria-controls="contactInfo">
+
+                <span>✉</span>
+                <span>Contact Me</span>
+                <span class="arrow">›</span>
+
+            </button>
+
+            <div class="contact-form" id="contactInfo" hidden>
+
+                <h3>Get in touch!</h3>
+
+                <p>Feel free to contact me via email:</p>
+
+                <a class="email-link">
+                    namdar.namlid@gmail.com
+                </a>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Danke für deinen Besuch! <span>♥</span></p>
+            <small>Designed &amp; developed by Dilman Namdar</small>
+        </footer>
+
+    </main>
+
+    <script>
+        const contactToggle = document.getElementById("contactToggle");
+        const contactInfo = document.getElementById("contactInfo");
+
+        contactToggle.addEventListener("click", () => {
+            const isOpen = !contactInfo.hidden;
+
+            contactInfo.hidden = isOpen;
+            contactToggle.setAttribute("aria-expanded", String(!isOpen));
+        });
+    </script>
+
+</body>
+</html>
