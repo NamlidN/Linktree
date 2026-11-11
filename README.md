@@ -1,17 +1,20 @@
-# Linktree
 
-A personal Linktree website.
+# 🔗 Linktree
+
+My personal Linktree website.
 
 ## 🚀 Features
 
-- Personal landing page
-- Easy to customize
+- Personal profile
+- GitHub link
+- Contact section
+- Responsive design
 
-## 🛠️ Technologies
+## 🛠️ Built with
 
 - HTML
 - CSS
-
+- JavaScript
 
 ## 📦 Installation
 
@@ -21,22 +24,20 @@ Clone the repository:
 git clone git@github.com:NamlidN/Linktree.git
 ```
 
-Navigate into the project directory:
+Go into the project folder:
 
 ```bash
 cd Linktree
 ```
 
-Open the project in your preferred code editor.
-
-
+Open `index.html` in your browser.
 
 ## 👨‍💻 Author
 
-**NamlidN**
+**Dilman Namdar**
 
 - GitHub: [@NamlidN](https://github.com/NamlidN)
 
 ---
 
-⭐ Feel free to explore the project!
+⭐ Thanks for checking out my project!
